@@ -4,11 +4,10 @@
   tasks:
   - name: ngnix
     ansible.builtin.package:
-    name: ngnix
-    state: present
-    - name: start the ngnix
-      ansible.builtin.service:
+      name: ngnix
+      state: present
+  - name: start the ngnix
+    ansible.builtin.service:
       name: ngnix
       state: started
       enabled: yes
-      
