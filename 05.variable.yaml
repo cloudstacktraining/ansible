@@ -1,7 +1,7 @@
 - name: variable
   hosts: local
   connection: local
-  var: 
+  vars: 
    COURSE: "DEVOPS"
    DURATION: 120
    TRAINER: srujan
